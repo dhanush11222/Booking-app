@@ -1,32 +1,32 @@
-// import 'package:booking/views/bottomnavigation.dart';
-// import 'package:booking/views/doctor_list_screen.dart';
-// import 'package:booking/views/signup.dart';
-// import 'package:flutter/material.dart';
-// import 'views/splash_screen.dart';
-// import 'views/sign_in_screen.dart';
-// import 'views/dashboard_screen.dart';
-// import 'views/doctor_list_screen.dart';
-// import 'views/appointment_screen.dart';
-//
-// void main() => runApp(MyApp());
-//
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       routes: {
-//         '/': (ctx) => SplashScreen(),
-//         '/signin': (ctx) => SignInScreen(),
-//         '/SignUp': (ctx) => SignUpScreen(),
-//         '/dashboard': (ctx) => DashboardScreen(),
-//         '/doctor_list': (ctx) => DoctorListScreen(),
-//         // '/appointment': (ctx) => AppointmentScreen(),
-//       },
-//     );
-//   }
-// }
 import 'package:booking/views/bottomnavigation.dart';
+import 'package:booking/views/doctor_list_screen.dart';
+import 'package:booking/views/signup.dart';
+import 'package:flutter/material.dart';
+import 'views/splash_screen.dart';
+import 'views/sign_in_screen.dart';
+import 'views/dashboard_screen.dart';
+import 'views/doctor_list_screen.dart';
+import 'views/appointment_screen.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: {
+        '/': (ctx) => SplashScreen(),
+        '/signin': (ctx) => SignInScreen(),
+        '/SignUp': (ctx) => SignUpScreen(),
+        '/dashboard': (ctx) => DashboardScreen(),
+        '/doctor_list': (ctx) => DoctorListScreen(),
+        // '/appointment': (ctx) => AppointmentScreen(),
+      },
+    );
+  }
+}
+/*import 'package:booking/views/bottomnavigation.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart'; // For local storage to check login state
 
@@ -79,5 +79,5 @@ class MyApp extends StatelessWidget {
     // Retrieve login status, assume false if not found
     return prefs.getBool('isLoggedIn') ?? false;
   }
-}
+}*/
 
